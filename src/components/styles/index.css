@@ -1,0 +1,33 @@
+/* .layout {
+  width: 1024px;
+  margin: 15px auto;
+} */
+@import url('./form.css');
+@import url('./global.css');
+@import url('../layouts/Header/Header.css');
+@import url('../layouts/Sidebar/Sidebar.css');
+@import url('../layouts/Footer/Footer.css');
+
+.containerItem {
+    width: calc(25% - 75px / 4);
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid var(--primary);
+    padding: 15px;
+}
+
+.containerItem__title,
+.containerItem__creator,
+.containerItem__status,
+.containerItem__description {
+    display: flex;
+    gap: 10px;
+}
+
+
+.containerItem__description>p:first-child {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

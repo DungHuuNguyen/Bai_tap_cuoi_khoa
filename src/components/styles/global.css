@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #675bf1;
+    --new: #04be00;
+    --doing: rgb(168, 168, 52);
+    --done: rgb(255, 82, 209);
+}
+
+a,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+}

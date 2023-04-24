@@ -1,0 +1,69 @@
+.containerBody {
+    display: flex;
+    margin-left: 150px;
+    flex-wrap: wrap;
+    width: calc(100%-150px);
+}
+
+.containerBody>div {
+    margin: 15px 15px 0 0;
+}
+
+.containerBody>div:nth-child(4n+1) {
+    margin-left: 15px;
+}
+
+.formClassContainer {
+    margin: 40px auto;
+    width: 405px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.inputText {
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputText>label {
+    width: 200px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.inputText>input {
+    width: 350px;
+    border: none;
+    border-bottom: 1px solod black;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.inputText>input::placeholder {
+    color: #bbb;
+}
+
+.inputText>input:focus-visible {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.buttonClass {
+    width: 90px;
+    font-size: 18px;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+}
